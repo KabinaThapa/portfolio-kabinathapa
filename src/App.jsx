@@ -2,20 +2,35 @@
 import './App.css'
 
 function App() {
+  const handlescroll=(id)=>{
+
+    const section=document.getElementById(id)
+    if(id){
+      section.scrollIntoView({behavior:smooth})
+    }
+  }
  
 
   return (
     <>
     <div className='outbox w-full bg-jet h-auto flex justify-evenly p-4 text-gray-300'>
    
-      <div className='Intro sticky top-0 border w-[40%] h-96 flex flex-col justify-center'>
-      <a className='font-opensans text-[3rem] font-bold tracking-tighter text-white'>Kabina Thapa</a>
-      <h1>Aspiring Front-End Developer</h1>
-      <p className='text-sm '>Crafting pixel-perfect wonders and turning ideas into interactive reality.</p>
-          <p className='text-sm'>Let's build something extraordinary together!</p>
+      <div className='Intro sticky top-0 border w-[40%] h-96 flex flex-col justify-center gap-3'>
+      <a className='font-opensans text-[3.5rem] font-bold tracking-tighter text-white leading-none'>Kabina Thapa</a>
+      <h1 className='text-[1.5rem] text-gray-100 '>Aspiring Front-End Developer</h1>
+      <p className='text-lg '>Crafting pixel-perfect wonders and turning ideas into interactive reality.
+      <p >Let's build something extraordinary together!</p>
+      </p>
+      <div>
+        <a href='#about' onClick={()=>handlescroll('about')}>About</a>
+        <a href='#projects' onClick={()=>handlescroll('projects')}>Projects</a>
+        <a href='#skills' onClick={()=>handlescroll('skills')}>Skills</a>
+      </div>
+          
       
       </div>
    <div className='second border w-[40%]'>
+    <div id='about'>
     <h1>About Me: Unveiling My Journey</h1>
     <p>Greetings! I'm Kabina Thapa, 
        Allow me to share a bit about the journey that brought me to where I am today.</p>
@@ -34,9 +49,15 @@ function App() {
             adding a vibrant and artistic dimension to my skill set.</p>
             <h1>Looking Ahead</h1>
             <p>Now, as I stand at the threshold of my career, I am eager to contribute my skills and enthusiasm to a dynamic team. I bring not only technical prowess but also a unique perspective shaped by my diverse experiences.
-              Join me on this exciting journey of innovation and transformation. Let's build something extraordinary together!</p>
-
+              Join me on this exciting journey of innovation and transformation.</p>
     
+    </div>
+    <div id='projects' className='h-96 border'>
+      <h1>Projects</h1>
+    </div>
+    <div id='skills' className='h-[55rem]'>
+      Skills
+    </div>
     </div>
     </div>
     
