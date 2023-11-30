@@ -1,5 +1,7 @@
 
 import './App.css'
+import { FaLinkedin } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 
 function App() {
   const handlescroll=(id)=>{
@@ -13,20 +15,26 @@ function App() {
 
   return (
     <>
-    <div className='outbox w-full bg-jet h-auto flex justify-evenly p-4 text-gray-300'>
+    <div className='outbox w-full bg-jet h-auto flex justify-evenly  text-gray-300'>
    
-      <div className='Intro sticky top-0 border w-[40%] h-96 flex flex-col justify-center gap-3'>
+      <div className='Intro sticky top-0 border w-[40%] h-screen flex flex-col justify-center gap-20 p-10'>
+        <div className='flex flex-col justify-center gap-2'>
       <a className='font-opensans text-[3.5rem] font-bold tracking-tighter text-white leading-none'>Kabina Thapa</a>
       <h1 className='text-[1.5rem] text-gray-100 '>Aspiring Front-End Developer</h1>
       <p className='text-lg '>Crafting pixel-perfect wonders and turning ideas into interactive reality.
       <p >Let's build something extraordinary together!</p>
       </p>
-      <div>
-        <a href='#about' onClick={()=>handlescroll('about')}>About</a>
-        <a href='#projects' onClick={()=>handlescroll('projects')}>Projects</a>
-        <a href='#skills' onClick={()=>handlescroll('skills')}>Skills</a>
       </div>
-          
+      <div className='flex flex-col text-[2rem] '> 
+        <a href='#about' className=' hover:text-white'  onClick={()=>handlescroll('about')}>About</a>
+        <a href='#projects' className=' hover:text-white' onClick={()=>handlescroll('projects')}>Projects</a>
+        <a href='#skills' className=' hover:text-white' onClick={()=>handlescroll('skills')}>Skills</a>
+      </div>
+          <div className='flex w-20 justify-between'>
+            <FaLinkedin size={32}/>
+            <FaGithub size={32}/>
+
+          </div>
       
       </div>
    <div className='second border w-[40%]'>
