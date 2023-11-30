@@ -6,10 +6,10 @@ function App() {
 
   return (
     <>
-    <div className='outbox w-full bg-slate-500 h-auto flex justify-evenly p-4'>
+    <div className='outbox w-full bg-jet h-auto flex justify-evenly p-4 text-gray-300'>
    
       <div className='Intro sticky top-0 border w-[40%] h-96 flex flex-col justify-center'>
-      <a className='font-opensans text-[3rem] font-bold tracking-tighter'>Kabina Thapa</a>
+      <a className='font-opensans text-[3rem] font-bold tracking-tighter text-white'>Kabina Thapa</a>
       <h1>Aspiring Front-End Developer</h1>
       <p className='text-sm '>Crafting pixel-perfect wonders and turning ideas into interactive reality.</p>
           <p className='text-sm'>Let's build something extraordinary together!</p>

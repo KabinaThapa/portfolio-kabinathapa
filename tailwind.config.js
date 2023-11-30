@@ -11,9 +11,17 @@ export default {
         opensans:['Open Sans', 'sans-serif'],
         robotoc:['Roboto Condensed', 'sans-serif']
 
+      },
+      colors:{
+        gun:'#2D3A3A',
+        violet:'#49475B',
+        jet:'#39393A',
+        space:'#2A2D43'
       }
+      
     },
   },
   plugins: [],
 }
 
+ 
