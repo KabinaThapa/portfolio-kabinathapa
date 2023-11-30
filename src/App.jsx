@@ -6,87 +6,38 @@ function App() {
 
   return (
     <>
-    <div className='container flex p-2 justify-between'>
-      <div className='sticky top-0 border w-[40%] h-96'>
-      <h1>Kabina Thapa</h1>
-      <div className='md:text-lg text-sm'>
-        <p>As a passionate and self-motivated aspiring front-end developer, 
-        I am dedicated to continuously expanding my knowledge and skills in web development. 
-        Eager to embark on a career in front-end development, I have been actively learning 
-        and working on personal projects to build a strong foundation in HTML, CSS, JavaScript,
-         and front-end frameworks like React. My drive to excel and adapt to emerging technologies 
-         makes me a determined and promising candidate eager to contribute to a dynamic team.</p>
-         </div>
+    <div className='outbox w-full bg-slate-500 h-auto flex justify-evenly p-4'>
+   
+      <div className='Intro sticky top-0 border w-[40%] h-96 flex flex-col justify-center'>
+      <a className='font-opensans text-[3rem] font-bold tracking-tighter'>Kabina Thapa</a>
+      <h1>Aspiring Front-End Developer</h1>
+      <p className='text-sm '>Crafting pixel-perfect wonders and turning ideas into interactive reality.</p>
+          <p className='text-sm'>Let's build something extraordinary together!</p>
       
       </div>
-   <div className='second w-[40%]'>
-    <h1>experiences</h1>
-    <div className='md:text-lg text-sm'>
-        <p>As a passionate and self-motivated aspiring front-end developer, 
-        I am dedicated to continuously expanding my knowledge and skills in web development. 
-        Eager to embark on a career in front-end development, I have been actively learning 
-        and working on personal projects to build a strong foundation in HTML, CSS, JavaScript,
-         and front-end frameworks like React. My drive to excel and adapt to emerging technologies 
-         makes me a determined and promising candidate eager to contribute to a dynamic team.</p>
-         </div>
-         <div className='md:text-lg text-sm'>
-        <p>As a passionate and self-motivated aspiring front-end developer, 
-        I am dedicated to continuously expanding my knowledge and skills in web development. 
-        Eager to embark on a career in front-end development, I have been actively learning 
-        and working on personal projects to build a strong foundation in HTML, CSS, JavaScript,
-         and front-end frameworks like React. My drive to excel and adapt to emerging technologies 
-         makes me a determined and promising candidate eager to contribute to a dynamic team.</p>
-         </div>
-         <div className='md:text-lg text-sm'>
-        <p>As a passionate and self-motivated aspiring front-end developer, 
-        I am dedicated to continuously expanding my knowledge and skills in web development. 
-        Eager to embark on a career in front-end development, I have been actively learning 
-        and working on personal projects to build a strong foundation in HTML, CSS, JavaScript,
-         and front-end frameworks like React. My drive to excel and adapt to emerging technologies 
-         makes me a determined and promising candidate eager to contribute to a dynamic team.</p>
-         </div>
-         <div className='md:text-lg text-sm'>
-        <p>As a passionate and self-motivated aspiring front-end developer, 
-        I am dedicated to continuously expanding my knowledge and skills in web development. 
-        Eager to embark on a career in front-end development, I have been actively learning 
-        and working on personal projects to build a strong foundation in HTML, CSS, JavaScript,
-         and front-end frameworks like React. My drive to excel and adapt to emerging technologies 
-         makes me a determined and promising candidate eager to contribute to a dynamic team.</p>
-         </div>
-         <div className='md:text-lg text-sm'>
-        <p>As a passionate and self-motivated aspiring front-end developer, 
-        I am dedicated to continuously expanding my knowledge and skills in web development. 
-        Eager to embark on a career in front-end development, I have been actively learning 
-        and working on personal projects to build a strong foundation in HTML, CSS, JavaScript,
-         and front-end frameworks like React. My drive to excel and adapt to emerging technologies 
-         makes me a determined and promising candidate eager to contribute to a dynamic team.</p>
-         </div>
-         <div className='md:text-lg text-sm'>
-        <p>As a passionate and self-motivated aspiring front-end developer, 
-        I am dedicated to continuously expanding my knowledge and skills in web development. 
-        Eager to embark on a career in front-end development, I have been actively learning 
-        and working on personal projects to build a strong foundation in HTML, CSS, JavaScript,
-         and front-end frameworks like React. My drive to excel and adapt to emerging technologies 
-         makes me a determined and promising candidate eager to contribute to a dynamic team.</p>
-         </div>
-         <div className='md:text-lg text-sm'>
-        <p>As a passionate and self-motivated aspiring front-end developer, 
-        I am dedicated to continuously expanding my knowledge and skills in web development. 
-        Eager to embark on a career in front-end development, I have been actively learning 
-        and working on personal projects to build a strong foundation in HTML, CSS, JavaScript,
-         and front-end frameworks like React. My drive to excel and adapt to emerging technologies 
-         makes me a determined and promising candidate eager to contribute to a dynamic team.</p>
-         </div>
-         <div className='md:text-lg text-sm'>
-        <p>As a passionate and self-motivated aspiring front-end developer, 
-        I am dedicated to continuously expanding my knowledge and skills in web development. 
-        Eager to embark on a career in front-end development, I have been actively learning 
-        and working on personal projects to build a strong foundation in HTML, CSS, JavaScript,
-         and front-end frameworks like React. My drive to excel and adapt to emerging technologies 
-         makes me a determined and promising candidate eager to contribute to a dynamic team.</p>
-         </div>
+   <div className='second border w-[40%]'>
+    <h1>About Me: Unveiling My Journey</h1>
+    <p>Greetings! I'm Kabina Thapa, 
+       Allow me to share a bit about the journey that brought me to where I am today.</p>
+    <h1>Venturing into the unknown</h1>
+    <p>In 2017, I embarked on a life-changing journey, leaving the comfort of my home country to pursue my dreams in the United States. As an international student with a burning desire to delve into the world of technology, I chose to study Computer Science. 
+      It wasn't merely a choice of career; it was a bold step to challenge norms and break barriers.</p>
+      <h1> Breaking Stereotypes</h1>
+      <p>Back in my homeland, the percentage of women pursuing technology was minimal. Motivated by a desire to change this narrative, 
+        I set out on a mission to be a trailblazer. I knew that by immersing myself in the world of computer science, 
+        I could inspire other young women to follow their passion and embrace the possibilities within the tech realm.</p>
+        <h1>Educational Milestones</h1>
+        <p>Fast forward to today, I hold a Bachelor's degree in Computer Science from Queens College/CUNY, a testament to my dedication and hard work. Additionally, I earned an Associate degree in Computer Science from Fiorello H. LaGuardia Community College/CUNY. 
+          My academic journey has equipped me with the skills and knowledge needed to excel in the dynamic field of technology.</p>
+          <h1>Beyond Code: Unleashing Creativity</h1>
+          <p>Beyond the world of coding, I find solace in the realm of 3D art painting during my free time. This creative outlet allows me to express myself, 
+            adding a vibrant and artistic dimension to my skill set.</p>
+            <h1>Looking Ahead</h1>
+            <p>Now, as I stand at the threshold of my career, I am eager to contribute my skills and enthusiasm to a dynamic team. I bring not only technical prowess but also a unique perspective shaped by my diverse experiences.
+              Join me on this exciting journey of innovation and transformation. Let's build something extraordinary together!</p>
+
     
-   </div>
+    </div>
     </div>
     
      
