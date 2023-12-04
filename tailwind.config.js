@@ -20,7 +20,9 @@ export default {
         jet:'#39393A',
         space:'#2A2D43',
         mount:'#1E1F1F',
-        silver:'#D3C1D2'
+        silver:'#D3C1D2',
+        thistle:'#D53B20',
+        t:'#A1A314'
 
       }
       

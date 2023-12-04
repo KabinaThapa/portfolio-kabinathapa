@@ -3,7 +3,7 @@ import { StrictMode } from 'react';
 import './App.css'
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
-
+import { LuArrowUpRightFromCircle } from "react-icons/lu";
 
 function App() {
   const handlescroll=(id)=>{
@@ -27,20 +27,20 @@ function App() {
       <p >Let's build something extraordinary together!</p>
       </p>
       </div>
-      <div className='flex flex-col text-[2rem] '> 
+      <div className='flex flex-col text-2xl '> 
         <a href='#about' className=' hover:text-white'  onClick={()=>handlescroll('about')}>About</a>
         <a href='#projects' className=' hover:text-white' onClick={()=>handlescroll('projects')}>Projects</a>
         <a href='#skills' className=' hover:text-white' onClick={()=>handlescroll('skills')}>Skills</a>
       </div>
           <div className='flex w-20 justify-between'>
-            <FaLinkedin size={32}/>
-            <FaGithub size={32}/>
+            <FaLinkedin size={30}/>
+            <FaGithub size={30}/>
 
           </div>
       
       </div>
    <div className='second border w-[60%] flex flex-col gap-10 '>
-    <div id='about' className=' flex flex-col p-8 gap-2  '>
+    <div id='about' className=' flex flex-col p-10 gap-2  '>
       <div>
       <h1 className='text-lg text-white'>About Me: Unveiling My Journey</h1>
     <p>Greetings! I'm Kabina Thapa, 
@@ -73,13 +73,21 @@ function App() {
      
     
     </div>
-    <div id='projects' className=' border flex flex-col p-8 gap-10 '>
+    <div id='projects' className=' border flex flex-col p-10 gap-16 '>
       <div className='flex'>
       <div className='w-[40%]'>
         Image
       </div>
-      <div className='w-[60%]'>
-        <h1>GlamEdge Ecommerce Website</h1>
+      <div className='w-[60%] flex flex-col gap-4'>
+        <div className='flex justify-between items-center'> 
+           <h1>GlamEdge Ecommerce Website</h1>
+           <div className='flex justify-around w-16'>
+           <FaGithub size={20}/>
+           <LuArrowUpRightFromCircle size={20} />
+           </div>
+           
+            </div>
+       
         <p>GlamEdge is a dynamic e-commerce application designed for a seamless shopping experience. 
           With user-friendly categories like Men, Women, and Beauty, it offers a curated selection of 
           featured products, on-sale items, and top trending fashion. Users can easily add, delete, 
@@ -88,33 +96,75 @@ function App() {
           shopping journey.
 
 </p>
+<div className='font-normal flex gap-4'>
+  <div className='w-24 text-t bg-t bg-opacity-20 flex  justify-center rounded-3xl p-1'>Next.js</div>
+  <div className='w-24 text-t bg-t bg-opacity-20 flex  justify-center rounded-3xl p-1'>Tailwind</div>
+  <div className='w-24 text-t bg-t bg-opacity-20 flex  justify-center rounded-3xl p-1'>React</div>
+  <div className='w-24 text-t bg-t bg-opacity-20 flex  justify-center rounded-3xl p-1'>Typescript</div>
+  <div className='w-24 text-t bg-t bg-opacity-20 flex  justify-center rounded-3xl p-1'>Redux</div>
+  
+  
+</div>
       </div>
       </div>
       <div className='flex'> 
       <div className='w-[40%]'>
         Image
       </div>
-      <div className='w-[60%]'>
-        <h1>Weather Insight Website</h1>
+      <div className='w-[60%] flex flex-col gap-4 '>
+      <div className='flex justify-between items-center'> 
+           <h1>Weather Forecasts Website</h1>
+           <div className='flex justify-around w-16'>
+           <FaGithub size={20}/>
+           <LuArrowUpRightFromCircle size={20} />
+           </div>
+           
+            </div>
         <p>Explore real-time weather forecasts for cities across the US with the Weather Insight Website. 
           Check current temperatures, humidity, and wind conditions, along with detailed 3-hour forecasts for the next 5 days.
            Stay informed and plan your activities seamlessly with this intuitive weather application.
 
 </p>
+<div className='font-normal flex gap-4'>
+  <div className='w-24 text-t bg-t bg-opacity-20 flex  justify-center rounded-3xl p-1'>Next.js</div>
+  <div className='w-24 text-t bg-t bg-opacity-20 flex  justify-center rounded-3xl p-1'>Tailwind</div>
+  <div className='w-24 text-t bg-t bg-opacity-20 flex  justify-center rounded-3xl p-1'>React</div>
+  <div className='w-24 text-t bg-t bg-opacity-20 flex  justify-center rounded-3xl p-1'>Typescript</div>
+  <div className='w-24 text-t bg-t bg-opacity-20 flex  justify-center rounded-3xl p-1'>Redux</div>
+  
+  
+</div>
       </div>
       </div>
       <div className='flex'>
       <div className='w-[40%]'>
         Image
       </div>
-      <div className='w-[60%]'>
-        <h1>An Old Portfolio</h1>
+      <div className='w-[60%] flex flex-col gap-4'>
+      <div className='flex justify-between items-center'> 
+           <h1>An Old Portfolio</h1>
+           <div className='flex justify-around w-16'>
+           <FaGithub size={20}/>
+           <LuArrowUpRightFromCircle size={20} />
+           </div>
+           
+            </div>
         <p>Explore my previous portfolio where creativity met technology. Featuring a captivating blend of Three.js magic, 
           it showcased a meticulously crafted 3D model designed in Blender. The experience was elevated with smooth scrolling,
            offering a seamless journey through digital artistry. Discover the intersection of
            design and technology that defined this portfolio and stay tuned for more exciting chapters in my evolving journey.
 
 </p>
+<div className='font-normal flex gap-4'>
+  <div className='w-24 text-t bg-t bg-opacity-20 flex  justify-center rounded-3xl p-1'>Next.js</div>
+  <div className='w-24 text-t bg-t bg-opacity-20 flex  justify-center rounded-3xl p-1'>Tailwind</div>
+  <div className='w-24 text-t bg-t bg-opacity-20 flex  justify-center rounded-3xl p-1'>React</div>
+  <div className='w-2 text-t bg-t bg-opacity-20 flex  justify-center rounded-3xl p-1'>Typescript</div>
+  <div className='w-24 text-t bg-t bg-opacity-20 flex  justify-center rounded-3xl p-1'>Redux</div>
+  
+  
+</div>
+
       </div>
       </div>
       
