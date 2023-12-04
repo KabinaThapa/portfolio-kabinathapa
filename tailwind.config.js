@@ -9,7 +9,9 @@ export default {
       fontFamily:{
         roboto:['Roboto', 'sans-serif'],
         opensans:['Open Sans', 'sans-serif'],
-        robotoc:['Roboto Condensed', 'sans-serif']
+        robotoc:['Roboto Condensed', 'sans-serif'],
+        poppins:['Poppins', 'sans-serif'],
+        p: ['Poppins', 'sans-serif'],
 
       },
       colors:{
@@ -18,7 +20,7 @@ export default {
         jet:'#39393A',
         space:'#2A2D43',
         mount:'#1E1F1F',
-        silver:'#B6B9B9'
+        silver:'#D3C1D2'
 
       }
       

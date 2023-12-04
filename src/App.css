@@ -2,3 +2,7 @@
     background-image: url('/public/texture2.png');
    
 }
+#about{
+    scroll-behavior: smooth;
+    transition-duration:15s;
+}
