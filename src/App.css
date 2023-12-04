@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 .outbox{
     background-image: url('/public/texture2.png');
    
