@@ -15,11 +15,11 @@ function App() {
 
   return (
     <>
-    <div className='outbox w-full bg-jet h-auto flex justify-evenly  text-gray-300'>
+    <div className='outbox w-full bg-mount h-auto flex justify-evenly  text-silver'>
    
-      <div className='Intro sticky top-0 border w-[40%] h-screen flex flex-col justify-center gap-20 p-10'>
-        <div className='flex flex-col justify-center gap-2'>
-      <a className='font-opensans text-[3.5rem] font-bold tracking-tighter text-white leading-none'>Kabina Thapa</a>
+      <div className='Intro sticky top-0  w-[30%] h-screen flex flex-col justify-center gap-20 p-10'>
+        <div className='flex flex-col justify-center gap-2 font-light'>
+      <a className='font-roboto text-[3.5rem] font-bold tracking-tighter text-white leading-none '>Kabina Thapa</a>
       <h1 className='text-[1.5rem] text-gray-100 '>Aspiring Front-End Developer</h1>
       <p className='text-lg '>Crafting pixel-perfect wonders and turning ideas into interactive reality.
       <p >Let's build something extraordinary together!</p>
@@ -37,27 +37,38 @@ function App() {
           </div>
       
       </div>
-   <div className='second border w-[40%]'>
-    <div id='about'>
-    <h1>About Me: Unveiling My Journey</h1>
+   <div className='second border w-[60%] flex flex-col gap-10 '>
+    <div id='about' className=' flex flex-col p-8 gap-2 border font-roboto font-light text-[1.09rem] leading-relaxed '>
+      <div>
+      <h1 className='text-lg text-white'>About Me: Unveiling My Journey</h1>
     <p>Greetings! I'm Kabina Thapa, 
        Allow me to share a bit about the journey that brought me to where I am today.</p>
-    <h1>Venturing into the unknown</h1>
+      </div>
+    <div> <h1 className='text-lg text-white'>Venturing into the unknown</h1>
     <p>In 2017, I embarked on a life-changing journey, leaving the comfort of my home country to pursue my dreams in the United States. As an international student with a burning desire to delve into the world of technology, I chose to study Computer Science. 
-      It wasn't merely a choice of career; it was a bold step to challenge norms and break barriers.</p>
-      <h1> Breaking Stereotypes</h1>
+      It wasn't merely a choice of career; it was a bold step to challenge norms and break barriers.</p></div>
+   <div><h1 className='text-lg text-white'> Breaking Stereotypes</h1>
       <p>Back in my homeland, the percentage of women pursuing technology was minimal. Motivated by a desire to change this narrative, 
         I set out on a mission to be a trailblazer. I knew that by immersing myself in the world of computer science, 
-        I could inspire other young women to follow their passion and embrace the possibilities within the tech realm.</p>
-        <h1>Educational Milestones</h1>
+        I could inspire other young women to follow their passion and embrace the possibilities within the tech realm.</p></div>
+      <div>
+      <h1 className='text-white text-lg'>Educational Milestones</h1>
         <p>Fast forward to today, I hold a Bachelor's degree in Computer Science from Queens College/CUNY, a testament to my dedication and hard work. Additionally, I earned an Associate degree in Computer Science from Fiorello H. LaGuardia Community College/CUNY. 
           My academic journey has equipped me with the skills and knowledge needed to excel in the dynamic field of technology.</p>
-          <h1>Beyond Code: Unleashing Creativity</h1>
-          <p>Beyond the world of coding, I find solace in the realm of 3D art painting during my free time. This creative outlet allows me to express myself, 
+         
+      </div>
+       <div>
+       <h1 className='text-white text-lg'>Beyond Code: Unleashing Creativity</h1>
+       <p>Beyond the world of coding, I find solace in the realm of 3D art, painting, and sketching during my free time. This creative outlet allows me to express myself, 
             adding a vibrant and artistic dimension to my skill set.</p>
-            <h1>Looking Ahead</h1>
+       </div>
+       <div>
+       <h1 className='text-white text-lg'>Looking Ahead</h1>
             <p>Now, as I stand at the threshold of my career, I am eager to contribute my skills and enthusiasm to a dynamic team. I bring not only technical prowess but also a unique perspective shaped by my diverse experiences.
               Join me on this exciting journey of innovation and transformation.</p>
+       </div>
+          
+     
     
     </div>
     <div id='projects' className='h-96 border'>
@@ -66,6 +77,8 @@ function App() {
     <div id='skills' className='h-[55rem]'>
       Skills
     </div>
+   
+   
     </div>
     </div>
     
