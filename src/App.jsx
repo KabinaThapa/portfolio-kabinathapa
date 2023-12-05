@@ -15,7 +15,7 @@ function App() {
   return (
     <>
       <div className="outbox w-full bg-mount ">
-       <div className=" w-full bg-black bg-opacity-20 h-auto flex justify-evenly  text-silver font-sans font-extralight tracking-wide leading-relaxed">
+       <div className=" w-full bg-jetlack bg-opacity-10 h-auto flex justify-around  text-slate-400 font-sans font-extralight tracking-wide leading-relaxed">
         <div className="Intro sticky top-0  w-[35%] h-screen flex flex-col justify-center gap-20 p-10">
           <div className="flex flex-col justify-center gap-2 font-extralight">
             <a className=" text-[3.5rem] font-bold text-white leading-none ">
@@ -58,7 +58,7 @@ function App() {
             <FaGithub size={30} />
           </div>
         </div>
-        <div className="second border w-[60%] flex flex-col gap-10 ">
+        <div className="second  w-[55%] flex flex-col gap-10 ">
           <div id="about" className=" flex flex-col p-10 gap-2  ">
             <div>
               <h1 className="text-lg text-white">
@@ -126,8 +126,8 @@ function App() {
               </p>
             </div>
           </div>
-          <div id="projects" className=" border flex flex-col p-4 gap-16 ">
-            <div className="flex gap-4 items-center justify-around hover:bg-b hover:bg-opacity-10 p-6 hover:rounded group">
+          <div id="projects" className="  flex flex-col p-4 gap-16 ">
+            <div className="flex gap-4 items-center justify-around hover:bg-jet hover:bg-opacity-20 p-6 hover:rounded group">
               <div className="w-[30%]">
                 <img src="public/glamedge.png" className="w-full h-full object-fit"/>
               </div>
@@ -135,8 +135,8 @@ function App() {
                 <div className="flex justify-between items-center">
                   <h1 className="text-lg text-white font-light group-hover:text-t group">GlamEdge Ecommerce Website</h1>
                   <div className="flex justify-around w-16 group-hover:translate-y-[-0.4rem] group-hover:text-t ">
-                    <FaGithub size={20} />
-                    <LuArrowUpRightFromCircle size={20} />
+                  <a href='https://github.com/KabinaThapa/GlamEdge' >  <FaGithub size={20} /></a> 
+                   <a href='https://glam-edge.vercel.app/'><LuArrowUpRightFromCircle size={20} /></a> 
                   </div>
                 </div>
 
@@ -170,7 +170,7 @@ function App() {
                 </div>
               </div>
             </div>
-            <div className="flex gap-4 items-center justify-around  hover:bg-b hover:bg-opacity-10 p-6 hover:rounded group">
+            <div className="flex gap-4 items-center justify-around  hover:bg-jet hover:bg-opacity-20 p-6 hover:rounded group">
               <div className="w-[30%]">
               <img src="public/weather.png" className="w-full h-full object-fit"/>
               </div>
@@ -178,8 +178,8 @@ function App() {
                 <div className="flex justify-between items-center ">
                   <h1 className="text-white group-hover:text-t text-lg font-light">Weather Forecasts Website</h1>
                   <div className="flex justify-around w-16 group-hover:translate-y-[-0.4rem] group-hover:text-t  ">
-                    <FaGithub size={20} />
-                    <LuArrowUpRightFromCircle size={20} />
+                   <a href='https://github.com/KabinaThapa/weather-app'> <FaGithub size={20} /></a> 
+                    <a href=' https://weather-app-kabinathapa.vercel.app/'><LuArrowUpRightFromCircle size={20} /></a>
                   </div>
                 </div>
                 <p>
@@ -208,7 +208,7 @@ function App() {
                 </div>
               </div>
             </div>
-            <div className="flex gap-4 items-center justify-around  hover:bg-b hover:bg-opacity-10 p-6 hover:rounded group">
+            <div className="flex gap-4 items-center justify-around  hover:bg-jet hover:bg-opacity-10 p-6 hover:rounded group">
               <div className="w-[30%]">
                 <img src='public/portfolio.png'/>
               </div>
@@ -216,8 +216,8 @@ function App() {
                 <div className="flex justify-between items-center">
                   <h1 className="text-white group-hover:text-t text-lg font-light">An Old Portfolio</h1>
                   <div className="flex justify-around w-16 group-hover:text-t group-hover:translate-y-[-0.4rem]">
-                    <FaGithub size={20} />
-                    <LuArrowUpRightFromCircle size={20} />
+                    <a href='https://github.com/KabinaThapa/portfolio'><FaGithub size={20} /></a>
+                    <a href='https://portfolio-thapakabina.vercel.app/'><LuArrowUpRightFromCircle size={20} /></a>
                   </div>
                 </div>
                 <p>

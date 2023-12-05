@@ -19,10 +19,10 @@ export default {
         violet:'#49475B',
         jet:'#39393A',
         space:'#2A2D43',
-        mount:'#322D39',
-        silver:'#D3C1D2',
+        mount:'#0C1821',
+        silver:'#B4CEE4',
         thistle:'#D53B20',
-        t:'#4CBDBB',
+        t:'#F4B266',
         b:'#6D6A75',
 
       }
