@@ -52,37 +52,52 @@ function App() {
               <p>Let's build something extraordinary together!</p>
             </p>
           </div>
-          <div className="flex flex-col text-2xl ">
-          <div  className={`${active==='about' && 'font-bold visible'} hover:text-white group flex items-center` }>
+          <div className="flex flex-col text-2xl gap-4 ">
+          <div  className='flex items-center'>
           <a
               href="#about"
+              className={`${active==='about' && 'font-semibold text-white '} text-slate-100 ` }
              
               onClick={() => handlescroll("about")}
             >
               About
               
             </a>
-            <div  className='w-32 h-1 border invisible'></div>
+            <div className={`${active==='about'?'opacity-100':'opacity-0'}  w-full bg-t h-[0.1rem]  ml-4` }></div>
           </div>
-          <div className="flex"> 
+          <div className="flex items-center"> 
           <a
               href="#projects"
-              className={`${active==='projects' && 'font-bold'} hover:text-white` }
+              className={`${active==='projects' && ' text-white font-semibold'} text-slate-100 ` }
               onClick={() => handlescroll("projects")}
             >
               Projects
             </a>
-            <div className="w-32 h-1 border"></div>
+            <div className={`${active==='projects'?'opacity-100':'opacity-0'}  w-full bg-t h-[0.1rem]  ml-4` }></div>
           </div>
            
             
-            <a
+          <div className="flex items-center"> 
+          <a
               href="#skills"
-              className={`${active==='skills' && 'font-bold'} hover:text-white` }
+              className={`${active==='skills' && ' text-white font-semibold'} text-slate-100` }
               onClick={() => handlescroll("skills")}
             >
               Skills
             </a>
+            <div className={`${active==='skills'?'opacity-100':'opacity-0'}  w-full bg-t h-[0.1rem]  ml-4` }></div>
+          </div>
+              
+          <div className="flex items-center"> 
+          <a
+              href="#contact"
+              className={`${active==='contact' && ' text-white font-semibold'} text-slate-100 ` }
+              onClick={() => handlescroll("skills")}
+            >
+              Contact
+            </a>
+            <div className={`${active==='contact'?'opacity-100':'opacity-0'}  w-full bg-t h-[0.1rem]  ml-4` }></div>
+          </div>
           </div>
           <div className="flex w-20 justify-between">
             <FaLinkedin size={30} />
@@ -281,12 +296,12 @@ function App() {
               </div>
             </div>
           </section>
-          <div id="skills" className="h-[55rem]">
+          <section id="skills" className="h-[55rem]">
             Skills
-          </div>
-          <div id="skills" className="h-[55rem]">
+          </section>
+          <section id="contact" className="h-[55rem]">
             Contact
-          </div>
+          </section>
 
         </div>
         </div>
