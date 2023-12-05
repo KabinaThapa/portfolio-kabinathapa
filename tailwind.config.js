@@ -22,7 +22,7 @@ export default {
         mount:'#0C1821',
         silver:'#B4CEE4',
         thistle:'#D53B20',
-        t:'#F4B266',
+        t:'#FF781F',
         b:'#6D6A75',
 
       }

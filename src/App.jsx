@@ -40,7 +40,7 @@ function App() {
        <div className=" w-full bg-jetlack bg-opacity-10 h-auto flex justify-around  text-slate-400 font-sans font-extralight tracking-wide leading-relaxed">
         <div className="Intro sticky top-0  w-[35%] h-screen flex flex-col justify-center gap-20 p-10">
           <div className="flex flex-col justify-center gap-2 font-extralight">
-            <a className=" text-[3.5rem] font-bold text-white leading-none ">
+            <a className=" text-[3.5rem] font-bold text-white leading-none tracking-tight ">
               Kabina Thapa
             </a>
             <h1 className="text-[1.5rem] text-gray-100 ">
@@ -56,47 +56,47 @@ function App() {
           <div  className='flex items-center'>
           <a
               href="#about"
-              className={`${active==='about' && 'font-semibold text-white '} text-slate-100 ` }
+              className={`${active==='about' && 'font-normal hover:no-underline text-white '} text-slate-100 hover:underline hover:underline-offset-4` }
              
               onClick={() => handlescroll("about")}
             >
               About
               
             </a>
-            <div className={`${active==='about'?'opacity-100':'opacity-0'}  w-full bg-t h-[0.1rem]  ml-4` }></div>
+            <div className={`${active==='about'?'opacity-100':'opacity-0'}  w-full bg-t h-[0.1rem]  ml-4 rounded` }></div>
           </div>
           <div className="flex items-center"> 
           <a
               href="#projects"
-              className={`${active==='projects' && ' text-white font-semibold'} text-slate-100 ` }
+              className={`${active==='projects' && ' text-white font-normal hover:no-underline'} text-slate-100 hover:underline hover:underline-offset-4` }
               onClick={() => handlescroll("projects")}
             >
               Projects
             </a>
-            <div className={`${active==='projects'?'opacity-100':'opacity-0'}  w-full bg-t h-[0.1rem]  ml-4` }></div>
+            <div className={`${active==='projects'?'opacity-100':'opacity-0'}  w-full bg-t h-[0.1rem] rounded ml-4` }></div>
           </div>
            
             
           <div className="flex items-center"> 
           <a
               href="#skills"
-              className={`${active==='skills' && ' text-white font-semibold'} text-slate-100` }
+              className={`${active==='skills' && ' text-white font-normal hover:no-underline'} text-slate-100 hover:underline hover:underline-offset-4` }
               onClick={() => handlescroll("skills")}
             >
               Skills
             </a>
-            <div className={`${active==='skills'?'opacity-100':'opacity-0'}  w-full bg-t h-[0.1rem]  ml-4` }></div>
+            <div className={`${active==='skills'?'opacity-100':'opacity-0'}  w-full bg-t h-[0.1rem] rounded ml-4` }></div>
           </div>
               
           <div className="flex items-center"> 
           <a
               href="#contact"
-              className={`${active==='contact' && ' text-white font-semibold'} text-slate-100 ` }
+              className={`${active==='contact' && ' text-white font-normal hover:no-underline'} text-slate-100 hover:underline hover:underline-offset-4` }
               onClick={() => handlescroll("skills")}
             >
               Contact
             </a>
-            <div className={`${active==='contact'?'opacity-100':'opacity-0'}  w-full bg-t h-[0.1rem]  ml-4` }></div>
+            <div className={`${active==='contact'?'opacity-100':'opacity-0'}  w-full bg-t h-[0.1rem] rounded  ml-4` }></div>
           </div>
           </div>
           <div className="flex w-20 justify-between">
@@ -197,20 +197,20 @@ function App() {
                   checkout, GlamEdge delivers a modern and enjoyable shopping
                   journey.
                 </p>
-                <div className="font-normal flex gap-4">
-                  <div className="w-32 text-t bg-t bg-opacity-20 flex  justify-center rounded-3xl p-1">
+                <div className="font-normal grid grid-cols-3 gap-4">
+                  <div className=" text-t bg-t bg-opacity-20 flex  justify-center rounded-3xl p-1">
                     Next.js
                   </div>
-                  <div className="w-36 text-t bg-t bg-opacity-20 flex  justify-center rounded-3xl p-1">
-                    Tailwind
+                  <div className=" text-t bg-t bg-opacity-20 flex  justify-center rounded-3xl p-1">
+                    Tailwind CSS
                   </div>
-                  <div className="w-28 text-t bg-t bg-opacity-20 flex  justify-center rounded-3xl p-1">
+                  <div className=" text-t bg-t bg-opacity-20 flex  justify-center rounded-3xl p-1">
                     React
                   </div>
-                  <div className="w-44 text-t bg-t bg-opacity-20 flex  justify-center rounded-3xl p-1">
+                  <div className=" text-t bg-t bg-opacity-20 flex  justify-center rounded-3xl p-1">
                     Typescript
                   </div>
-                  <div className="w-28 text-t bg-t bg-opacity-20 flex  justify-center rounded-3xl p-1">
+                  <div className=" text-t bg-t bg-opacity-20 flex  justify-center rounded-3xl p-1">
                     Redux
                   </div>
                 </div>
@@ -235,21 +235,19 @@ function App() {
                   forecasts for the next 5 days. Stay informed and plan your
                   activities seamlessly with this intuitive weather application.
                 </p>
-                <div className="font-normal flex gap-4">
-                  <div className="w-32 text-t bg-t bg-opacity-20 flex  justify-center rounded-3xl p-1">
-                    Next.js
-                  </div>
-                  <div className="w-36 text-t bg-t bg-opacity-20 flex  justify-center rounded-3xl p-1">
-                    Tailwind
-                  </div>
-                  <div className="w-28 text-t bg-t bg-opacity-20 flex  justify-center rounded-3xl p-1">
+                <div className="font-normal grid grid-cols-3 gap-4">
+                  <div className=" text-t bg-t bg-opacity-20 flex  justify-center rounded-3xl p-1">
                     React
                   </div>
-                  <div className="w-44 text-t bg-t bg-opacity-20 flex  justify-center rounded-3xl p-1">
-                    Typescript
+                  <div className=" text-t bg-t bg-opacity-20 flex  justify-center rounded-3xl p-1">
+                    Tailwind CSS
                   </div>
-                  <div className="w-28 text-t bg-t bg-opacity-20 flex  justify-center rounded-3xl p-1">
-                    Redux
+                
+                  <div className=" text-t bg-t bg-opacity-20 flex  justify-center rounded-3xl p-1">
+                    JavaScript
+                  </div>
+                  <div className=" text-t bg-t bg-opacity-20 flex  justify-center rounded-3xl p-1">
+                   Context API
                   </div>
                 </div>
               </div>
@@ -276,21 +274,21 @@ function App() {
                   portfolio and stay tuned for more exciting chapters in my
                   evolving journey.
                 </p>
-                <div className="font-normal flex gap-4">
-                  <div className="w-32 text-t bg-t bg-opacity-20 flex  justify-center rounded-3xl p-1">
-                    Next.js
+                <div className="font-normal grid grid-cols-3 gap-4">
+                  <div className=" text-t bg-t bg-opacity-20 flex  justify-center rounded-3xl p-1">
+                    Three.js
                   </div>
-                  <div className="w-36 text-t bg-t bg-opacity-20 flex  justify-center rounded-3xl p-1">
-                    Tailwind
+                  <div className=" text-t bg-t bg-opacity-20 flex  justify-center rounded-3xl p-1">
+                    Tailwind CSS
                   </div>
-                  <div className="w-28 text-t bg-t bg-opacity-20 flex  justify-center rounded-3xl p-1">
+                  <div className=" text-t bg-t bg-opacity-20 flex  justify-center rounded-3xl p-1">
                     React
                   </div>
-                  <div className="w-44 text-t bg-t bg-opacity-20 flex  justify-center rounded-3xl p-1">
-                    Typescript
+                  <div className=" text-t bg-t bg-opacity-20 flex  justify-center rounded-3xl p-1">
+                    JavaScript
                   </div>
-                  <div className="w-28 text-t bg-t bg-opacity-20 flex  justify-center rounded-3xl p-1">
-                    Redux
+                  <div className=" text-t bg-t bg-opacity-20 flex  justify-center rounded-3xl p-1">
+                    Blender
                   </div>
                 </div>
               </div>
