@@ -1,10 +1,32 @@
-import { StrictMode } from "react";
+import { StrictMode, useState } from "react";
 import "./App.css";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { LuArrowUpRightFromCircle } from "react-icons/lu";
+import { useEffect } from "react";
 
 function App() {
+  const[active,setActive]=useState('about')
+  function handleScrollto(){
+    const sections=document.querySelectorAll('section')
+    const scrollPosition=window.scrollY+200
+    sections.forEach((section)=>{
+      const sectionTop=section.offsetTop
+      const sectionBottom=sectionTop+section.offsetHeight
+      if(scrollPosition>=sectionTop && scrollPosition<= sectionBottom){
+        setActive(section.id)
+      }
+    })
+  }
+  useEffect(()=>{
+    window.addEventListener('scroll', handleScrollto)
+    return()=>{
+      window.removeEventListener('scroll', handleScrollto)
+    }
+  },[])
+ 
+  
+  
   const handlescroll = (id) => {
     const section = document.getElementById(id);
     if (id) {
@@ -31,23 +53,32 @@ function App() {
             </p>
           </div>
           <div className="flex flex-col text-2xl ">
-            <a
+          <div  className={`${active==='about' && 'font-bold visible'} hover:text-white group flex items-center` }>
+          <a
               href="#about"
-              className=" hover:text-white"
+             
               onClick={() => handlescroll("about")}
             >
               About
+              
             </a>
-            <a
+            <div  className='w-32 h-1 border invisible'></div>
+          </div>
+          <div className="flex"> 
+          <a
               href="#projects"
-              className=" hover:text-white"
+              className={`${active==='projects' && 'font-bold'} hover:text-white` }
               onClick={() => handlescroll("projects")}
             >
               Projects
             </a>
+            <div className="w-32 h-1 border"></div>
+          </div>
+           
+            
             <a
               href="#skills"
-              className=" hover:text-white"
+              className={`${active==='skills' && 'font-bold'} hover:text-white` }
               onClick={() => handlescroll("skills")}
             >
               Skills
@@ -59,7 +90,7 @@ function App() {
           </div>
         </div>
         <div className="second  w-[55%] flex flex-col gap-10 ">
-          <div id="about" className=" flex flex-col p-10 gap-2  ">
+          <section id="about" className=" flex flex-col p-10 gap-2  ">
             <div>
               <h1 className="text-lg text-white">
                 About Me: Unveiling My Journey
@@ -125,8 +156,8 @@ function App() {
                 innovation and transformation.
               </p>
             </div>
-          </div>
-          <div id="projects" className="  flex flex-col p-4 gap-16 ">
+          </section>
+          <section id="projects" className="  flex flex-col p-4 gap-16 ">
             <div className="flex gap-4 items-center justify-around hover:bg-jet hover:bg-opacity-20 p-6 hover:rounded group">
               <div className="w-[30%]">
                 <img src="public/glamedge.png" className="w-full h-full object-fit"/>
@@ -135,8 +166,8 @@ function App() {
                 <div className="flex justify-between items-center">
                   <h1 className="text-lg text-white font-light group-hover:text-t group">GlamEdge Ecommerce Website</h1>
                   <div className="flex justify-around w-16 group-hover:translate-y-[-0.4rem] group-hover:text-t ">
-                  <a href='https://github.com/KabinaThapa/GlamEdge' >  <FaGithub size={20} /></a> 
-                   <a href='https://glam-edge.vercel.app/'><LuArrowUpRightFromCircle size={20} /></a> 
+                  <a href='https://github.com/KabinaThapa/GlamEdge' >  <FaGithub size={20} className="hover:text-white" /></a> 
+                   <a href='https://glam-edge.vercel.app/'><LuArrowUpRightFromCircle size={20} className="hover:text-white" /></a> 
                   </div>
                 </div>
 
@@ -178,8 +209,8 @@ function App() {
                 <div className="flex justify-between items-center ">
                   <h1 className="text-white group-hover:text-t text-lg font-light">Weather Forecasts Website</h1>
                   <div className="flex justify-around w-16 group-hover:translate-y-[-0.4rem] group-hover:text-t  ">
-                   <a href='https://github.com/KabinaThapa/weather-app'> <FaGithub size={20} /></a> 
-                    <a href=' https://weather-app-kabinathapa.vercel.app/'><LuArrowUpRightFromCircle size={20} /></a>
+                   <a href='https://github.com/KabinaThapa/weather-app'> <FaGithub size={20} className="hover:text-white" /></a> 
+                    <a href=' https://weather-app-kabinathapa.vercel.app/'><LuArrowUpRightFromCircle size={20} className="hover:text-white" /></a>
                   </div>
                 </div>
                 <p>
@@ -216,8 +247,8 @@ function App() {
                 <div className="flex justify-between items-center">
                   <h1 className="text-white group-hover:text-t text-lg font-light">An Old Portfolio</h1>
                   <div className="flex justify-around w-16 group-hover:text-t group-hover:translate-y-[-0.4rem]">
-                    <a href='https://github.com/KabinaThapa/portfolio'><FaGithub size={20} /></a>
-                    <a href='https://portfolio-thapakabina.vercel.app/'><LuArrowUpRightFromCircle size={20} /></a>
+                    <a className="" href='https://github.com/KabinaThapa/portfolio'><FaGithub className="hover:text-white" size={20} /></a>
+                    <a href='https://portfolio-thapakabina.vercel.app/'><LuArrowUpRightFromCircle className="hover:text-white" size={20} /></a>
                   </div>
                 </div>
                 <p>
@@ -249,7 +280,7 @@ function App() {
                 </div>
               </div>
             </div>
-          </div>
+          </section>
           <div id="skills" className="h-[55rem]">
             Skills
           </div>
