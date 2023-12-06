@@ -2,7 +2,7 @@ import { StrictMode, useState } from "react";
 import "./App.css";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
-import { LuArrowUpRightFromCircle } from "react-icons/lu";
+import { LuArrowBigRight, LuArrowRight, LuArrowUpRightFromCircle } from "react-icons/lu";
 import { useEffect } from "react";
 
 function App() {
@@ -37,7 +37,7 @@ function App() {
   return (
     <>
       <div className="outbox w-full bg-mount ">
-       <div className=" w-full bg-jetlack bg-opacity-10 h-auto flex justify-around  text-slate-400 font-sans font-extralight tracking-wide leading-relaxed">
+       <div className=" w-full bg-black bg-opacity-10 h-auto flex justify-around  text-slate-400 font-sans font-extralight tracking-wide leading-relaxed">
         <div className="Intro sticky top-0  w-[35%] h-screen flex flex-col justify-center gap-20 p-10">
           <div className="flex flex-col justify-center gap-2 font-extralight">
             <a className=" text-[3.5rem] font-bold text-white leading-none tracking-tight ">
@@ -56,7 +56,7 @@ function App() {
           <div  className='flex items-center'>
           <a
               href="#about"
-              className={`${active==='about' && 'font-normal hover:no-underline text-white '} text-slate-100 hover:underline hover:underline-offset-4` }
+              className={`${active==='about' && 'font-normal hover:no-underline text-white '}  hover:underline hover:underline-offset-4` }
              
               onClick={() => handlescroll("about")}
             >
@@ -68,7 +68,7 @@ function App() {
           <div className="flex items-center"> 
           <a
               href="#projects"
-              className={`${active==='projects' && ' text-white font-normal hover:no-underline'} text-slate-100 hover:underline hover:underline-offset-4` }
+              className={`${active==='projects' && ' text-white font-normal hover:no-underline'}  hover:underline hover:underline-offset-4` }
               onClick={() => handlescroll("projects")}
             >
               Projects
@@ -77,34 +77,16 @@ function App() {
           </div>
            
             
-          <div className="flex items-center"> 
-          <a
-              href="#skills"
-              className={`${active==='skills' && ' text-white font-normal hover:no-underline'} text-slate-100 hover:underline hover:underline-offset-4` }
-              onClick={() => handlescroll("skills")}
-            >
-              Skills
-            </a>
-            <div className={`${active==='skills'?'opacity-100':'opacity-0'}  w-full bg-t h-[0.1rem] rounded ml-4` }></div>
-          </div>
+         
               
-          <div className="flex items-center"> 
-          <a
-              href="#contact"
-              className={`${active==='contact' && ' text-white font-normal hover:no-underline'} text-slate-100 hover:underline hover:underline-offset-4` }
-              onClick={() => handlescroll("skills")}
-            >
-              Contact
-            </a>
-            <div className={`${active==='contact'?'opacity-100':'opacity-0'}  w-full bg-t h-[0.1rem] rounded  ml-4` }></div>
+          
           </div>
-          </div>
-          <div className="flex w-20 justify-between">
-            <FaLinkedin size={30} />
-            <FaGithub size={30} />
+          <div className="flex w-20 justify-between ">
+            <a href='https://www.linkedin.com/in/kabina-thapa'> <FaLinkedin size={28} className="hover:text-white" /></a>
+           <a href='https://github.com/KabinaThapa'> <FaGithub size={28} className="hover:text-white" /></a>
           </div>
         </div>
-        <div className="second  w-[55%] flex flex-col gap-10 ">
+        <div className="second border  w-[55%] flex flex-col gap-10 ">
           <section id="about" className=" flex flex-col p-10 gap-2  ">
             <div>
               <h1 className="text-lg text-white">
@@ -172,9 +154,9 @@ function App() {
               </p>
             </div>
           </section>
-          <section id="projects" className="  flex flex-col p-4 gap-16 ">
-            <div className="flex gap-4 items-center justify-around hover:bg-jet hover:bg-opacity-20 p-6 hover:rounded group">
-              <div className="w-[30%]">
+          <section id="projects" className="  flex flex-col gap-16 p-4 text-[0.9rem] ">
+            <div className="flex  items-start justify-evenly hover:bg-jet hover:bg-opacity-20  hover:rounded group p-6">
+              <div className="w-[30%] border p-1 border-slate-500 ">
                 <img src="public/glamedge.png" className="w-full h-full object-fit"/>
               </div>
               <div className="w-[55%] flex flex-col gap-4">
@@ -211,13 +193,13 @@ function App() {
                     Typescript
                   </div>
                   <div className=" text-t bg-t bg-opacity-20 flex  justify-center rounded-3xl p-1">
-                    Redux
+                    Redux-Toolkit
                   </div>
                 </div>
               </div>
             </div>
-            <div className="flex gap-4 items-center justify-around  hover:bg-jet hover:bg-opacity-20 p-6 hover:rounded group">
-              <div className="w-[30%]">
+            <div className="flex  items-start justify-evenly  hover:bg-jet hover:bg-opacity-20 p-6 hover:rounded group">
+              <div className="w-[30%] border p-1 border-slate-500">
               <img src="public/weather.png" className="w-full h-full object-fit"/>
               </div>
               <div className="w-[55%] flex flex-col gap-4 ">
@@ -252,8 +234,8 @@ function App() {
                 </div>
               </div>
             </div>
-            <div className="flex gap-4 items-center justify-around  hover:bg-jet hover:bg-opacity-10 p-6 hover:rounded group">
-              <div className="w-[30%]">
+            <div className="flex  items-start justify-evenly  hover:bg-jet hover:bg-opacity-10 p-6 hover:rounded group">
+              <div className="w-[30%] border p-1 border-slate-500">
                 <img src='public/portfolio.png'/>
               </div>
               <div className="w-[55%] flex flex-col gap-4">
@@ -292,14 +274,16 @@ function App() {
                   </div>
                 </div>
               </div>
+           
             </div>
+            <div className="pl-10 flex items-center w-56 justify-evenly text-lg text-white font-semibold group hover:underline hover:underline-offset-8">
+              <a href='/public/Kabina Thapa-Resume.pdf'>View Full Resume</a> 
+            <LuArrowRight size={20} className="group-hover:translate-x-2"/>
+              </div>
+            
           </section>
-          <section id="skills" className="h-[55rem]">
-            Skills
-          </section>
-          <section id="contact" className="h-[55rem]">
-            Contact
-          </section>
+         
+          
 
         </div>
         </div>
