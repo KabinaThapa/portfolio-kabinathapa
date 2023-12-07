@@ -168,7 +168,7 @@ function App() {
           <section id="projects" className="  flex flex-col gap-16 p-4 text-[0.9rem] ">
             <div className="flex  items-start justify-evenly hover:bg-jet hover:bg-opacity-20  hover:rounded group p-6">
               <div className="w-[30%] border p-1 border-slate-500 ">
-                <img src="public/glamedge.png" className="w-full h-full object-fit"/>
+                <img src="/glamedge.png" className="w-full h-full object-fit"/>
               </div>
               <div className="w-[55%] flex flex-col gap-4">
                 <div className="flex justify-between items-center">
@@ -247,7 +247,7 @@ function App() {
             </div>
             <div className="flex  items-start justify-evenly  hover:bg-jet hover:bg-opacity-10 p-6 hover:rounded group">
               <div className="w-[30%] border p-1 border-slate-500">
-                <img src='public/portfolio.png'/>
+                <img src='/portfolio.png'/>
               </div>
               <div className="w-[55%] flex flex-col gap-4">
                 <div className="flex justify-between items-center">
@@ -288,7 +288,7 @@ function App() {
            
             </div>
             <div className=" ml-12  flex items-center w-60 justify-evenly text-xl text-white font-semibold group hover:underline hover:underline-offset-8">
-              <a href='public/Kabina Thapa-Resume.pdf'>View Full Resume</a> 
+              <a href='/Kabina Thapa-Resume.pdf'>View Full Resume</a> 
             <LuArrowRight size={20} className="group-hover:translate-x-2"/>
               </div>
               <footer className="flex items-center gap-1 justify-center p-10">
