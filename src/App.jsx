@@ -38,16 +38,16 @@ function App() {
   return (
     <>
       <div className="outbox w-full bg-mount ">
-       <div className=" w-full bg-black bg-opacity-10 h-auto flex justify-around  text-slate-400 font-sans font-extralight tracking-wide leading-relaxed">
-        <div className="Intro sticky top-0  w-[35%] h-screen flex flex-col justify-center gap-20 p-10">
-          <div className="flex flex-col justify-center gap-2 font-extralight">
-            <a className=" text-[3.5rem] font-bold text-white leading-none tracking-tight ">
+       <div className=" w-full bg-black bg-opacity-10 h-auto  flex md:flex-row flex-col justify-around  text-slate-400 font-sans font-extralight tracking-wide leading-relaxed">
+        <div className="Intro md:sticky md:top-0  md:w-[35%] w-[100%] h-auto md:h-screen flex flex-col justify-center gap-20 md:p-10 p-5">
+          <div className="flex flex-col justify-center items-center md:items-start gap-2 font-extralight">
+            <a className=" md:text-[3.5rem] text-[2rem] font-bold text-white leading-none tracking-tight ">
               Kabina Thapa
             </a>
-            <h1 className="text-[1.5rem] text-gray-100 ">
+            <h1 className="md:text-[1.5rem] text-[1rem] text-gray-100 ">
               Aspiring Front-End Developer
             </h1>
-            <p className="text-lg ">
+            <p className="md:text-lg text-sm md:text-start text-center">
               Crafting pixel-perfect wonders and turning ideas into interactive
               reality.
               <p>Let's build something extraordinary together!</p>
@@ -97,7 +97,7 @@ function App() {
          
         
         </div>
-        <div className="second  w-[55%] flex flex-col gap-10 ">
+        <div className="second  md:w-[55%] w-[100%] flex flex-col gap-10 ">
           <section id="about" className=" flex flex-col p-10 gap-2  ">
             <div>
               <h1 className="text-lg text-white">
