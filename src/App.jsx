@@ -1,12 +1,13 @@
 import { StrictMode, useState } from "react";
 import "./App.css";
-import { FaLinkedin } from "react-icons/fa";
+import { FaCopyright, FaLinkedin, FaRegCopyright } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { LuArrowBigRight, LuArrowRight, LuArrowUpRightFromCircle } from "react-icons/lu";
 import { useEffect } from "react";
 
 function App() {
   const[active,setActive]=useState('about')
+  
   function handleScrollto(){
     const sections=document.querySelectorAll('section')
     const scrollPosition=window.scrollY+200
@@ -56,7 +57,7 @@ function App() {
           <div  className='flex items-center'>
           <a
               href="#about"
-              className={`${active==='about' && 'font-normal hover:no-underline text-white '}  hover:underline hover:underline-offset-4` }
+              className={`${active==='about' && 'font-normal hover:no-underline text-white '}  hover:underline hover:underline-offset-8` }
              
               onClick={() => handlescroll("about")}
             >
@@ -86,7 +87,7 @@ function App() {
            <a href='https://github.com/KabinaThapa'> <FaGithub size={28} className="hover:text-white" /></a>
           </div>
         </div>
-        <div className="second border  w-[55%] flex flex-col gap-10 ">
+        <div className="second  w-[55%] flex flex-col gap-10 ">
           <section id="about" className=" flex flex-col p-10 gap-2  ">
             <div>
               <h1 className="text-lg text-white">
@@ -276,10 +277,16 @@ function App() {
               </div>
            
             </div>
-            <div className="pl-10 flex items-center w-56 justify-evenly text-lg text-white font-semibold group hover:underline hover:underline-offset-8">
-              <a href='/public/Kabina Thapa-Resume.pdf'>View Full Resume</a> 
+            <div className=" ml-12  flex items-center w-60 justify-evenly text-xl text-white font-semibold group hover:underline hover:underline-offset-8">
+              <a href='/public/Resume.pdf'>View Full Resume</a> 
             <LuArrowRight size={20} className="group-hover:translate-x-2"/>
               </div>
+              <footer className="flex items-center gap-1 justify-center p-10">
+              <FaRegCopyright/>
+                <p>
+                    2024 Kabina Thapa. All rights Reserved.
+                </p>
+              </footer>
             
           </section>
          
