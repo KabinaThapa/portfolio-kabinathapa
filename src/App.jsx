@@ -82,10 +82,20 @@ function App() {
               
           
           </div>
+          <div className="flex flex-col gap-4">
           <div className="flex w-20 justify-between ">
             <a href='https://www.linkedin.com/in/kabina-thapa'> <FaLinkedin size={28} className="hover:text-white" /></a>
            <a href='https://github.com/KabinaThapa'> <FaGithub size={28} className="hover:text-white" /></a>
+        
           </div>
+          <div className="flex items-center gap-2">
+           
+          <p className="hover:text-white">Email: thapakabina28@gmail.com</p>
+          </div>
+        
+          </div>
+         
+        
         </div>
         <div className="second  w-[55%] flex flex-col gap-10 ">
           <section id="about" className=" flex flex-col p-10 gap-2  ">
@@ -278,7 +288,7 @@ function App() {
            
             </div>
             <div className=" ml-12  flex items-center w-60 justify-evenly text-xl text-white font-semibold group hover:underline hover:underline-offset-8">
-              <a href='/public/Resume.pdf'>View Full Resume</a> 
+              <a href='/public/Kabina Thapa-Resume.pdf'>View Full Resume</a> 
             <LuArrowRight size={20} className="group-hover:translate-x-2"/>
               </div>
               <footer className="flex items-center gap-1 justify-center p-10">
