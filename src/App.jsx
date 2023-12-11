@@ -54,7 +54,7 @@ function App() {
             </p>
           </div>
           <div className="flex flex-col text-2xl gap-4 ">
-          <div  className='flex items-center'>
+          <div  className='md:visible invisible flex items-center'>
           <a
               href="#about"
               className={`${active==='about' && 'font-normal hover:no-underline text-white '}  hover:underline hover:underline-offset-8` }
@@ -66,7 +66,7 @@ function App() {
             </a>
             <div className={`${active==='about'?'opacity-100':'opacity-0'}  w-full bg-t h-[0.1rem]  ml-4 rounded` }></div>
           </div>
-          <div className="flex items-center"> 
+          <div className=" md:visible invisible flex items-center"> 
           <a
               href="#projects"
               className={`${active==='projects' && ' text-white font-normal hover:no-underline'}  hover:underline hover:underline-offset-4` }
@@ -98,6 +98,9 @@ function App() {
         
         </div>
         <div className="second  md:w-[55%] w-[100%] flex flex-col gap-10 ">
+        <section id="about" className="sticky top-0 w-44 h-8 bg-slate-300">
+              About
+            </section>
           <section id="about" className=" flex flex-col p-10 gap-2  ">
             <div>
               <h1 className="text-lg text-white">
@@ -165,6 +168,9 @@ function App() {
               </p>
             </div>
           </section>
+          <section id="projects" className="sticky top-0 w-44 h-8 bg-slate-300">
+              Project
+            </section>
           <section id="projects" className="  flex flex-col gap-16 p-4 text-[0.9rem] ">
             <div className="flex  items-start justify-evenly hover:bg-jet hover:bg-opacity-20  hover:rounded group p-6">
               <div className="w-[30%] border p-1 border-slate-500 ">
