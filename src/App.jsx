@@ -179,14 +179,14 @@ function App() {
               Projects
             </section>
         
-          <section id="projects" className="  flex flex-col lg:gap-16 gap-20 lg:p-4 p-6 text-[0.9rem] ">
+          <section id="projects" className="  flex flex-col lg:gap-16 gap-20 lg:p-4 p-6 ">
         
 
-            <div className="flex lg:flex-row flex-col-reverse lg:gap-0 gap-6 items-start justify-evenly hover:bg-jet hover:bg-opacity-20  hover:rounded group lg:p-6 ">
-              <div className="lg:w-[30%] border p-1 border-slate-500 ">
+            <div className="flex lg:grid md:grid lg:grid-cols-3 md:grid-cols-3 flex-col-reverse lg:gap-8 gap-6 items-start justify-evenly hover:bg-jet hover:bg-opacity-20  hover:rounded group lg:p-6 md:p-6 md:gap-12 ">
+              <div className=" border p-1 border-slate-500 ">
                 <img src="/glamedge.png" className="w-full h-full object-fit"/>
               </div>
-              <div className="lg:w-[55%] flex flex-col lg:gap-4 gap-5">
+              <div className=" lg:col-span-2 md:col-span-2 flex flex-col lg:gap-4 gap-5">
                 <div className="flex lg:flex-row flex-col lg:gap-0 gap-2 justify-between lg:items-center">
                   <h1 className="lg:text-lg text-white font-light group-hover:text-t group">GlamEdge Ecommerce Website</h1>
                   <div className="flex lg:justify-around justify-between lg:w-16 w-12 group-hover:translate-y-[-0.4rem] group-hover:text-t ">
@@ -225,11 +225,11 @@ function App() {
                 </div>
               </div>
             </div>
-            <div className="flex lg:flex-row flex-col-reverse lg:gap-0 gap-6 items-start justify-evenly  hover:bg-jet hover:bg-opacity-20 lg:p-6 hover:rounded group">
-              <div className="lg:w-[30%] border p-1 border-slate-500">
+            <div className=" md:grid lg:grid lg:grid-cols-3 md:grid-cols-3 flex flex-col-reverse lg:gap-8 md:gap-12 gap-6 items-start justify-evenly  hover:bg-jet hover:bg-opacity-20 lg:p-6 md:p-6 hover:rounded group">
+              <div className=" border p-1 border-slate-500">
               <img src="/weather.png" className="w-full h-full object-fit"/>
               </div>
-              <div className="lg:w-[55%] flex flex-col lg:gap-4 gap-5 ">
+              <div className=" lg:col-span-2 md:col-span-2  flex flex-col lg:gap-4 gap-5  ">
                 <div className="flex lg:flex-row flex-col justify-between lg:items-center lg:gap-0 gap-2 ">
                   <h1 className="text-white group-hover:text-t lg:text-lg font-light">Weather Forecasts Website</h1>
                   <div className="flex lg:justify-around justify-between lg:w-16 w-12 group-hover:translate-y-[-0.4rem] group-hover:text-t  ">
@@ -261,11 +261,11 @@ function App() {
                 </div>
               </div>
             </div>
-            <div className="flex lg:flex-row flex-col-reverse lg:gap-0 gap-6 items-start justify-evenly  hover:bg-jet hover:bg-opacity-10 lg:p-6 hover:rounded group">
-              <div className="lg:w-[30%] border p-1 border-slate-500">
+            <div className="flex lg:grid lg:grid-cols-3 md:grid md:grid-cols-3 flex-col-reverse lg:gap-8 gap-6 items-start justify-evenly  hover:bg-jet hover:bg-opacity-10 lg:p-6 md:p-6 md:gap-12 hover:rounded group">
+              <div className=" border p-1 border-slate-500">
                 <img src='/portfolio.png'/>
               </div>
-              <div className="lg:w-[55%] flex flex-col lg:gap-4 gap-5">
+              <div className="lg:col-span-2 md:col-span-2 flex flex-col lg:gap-4 gap-5">
                 <div className="flex lg:flex-row flex-col justify-between lg:items-center  lg:gap-0 gap-2">
                   <h1 className="text-white group-hover:text-t lg:text-lg font-light">An Old Portfolio</h1>
                   <div className="flex lg:justify-around justify-between lg:w-16 w-12 group-hover:text-t group-hover:translate-y-[-0.4rem]">
