@@ -42,23 +42,23 @@ function App() {
   return (
     <>
       <div className="outbox w-full bg-mount ">
-       <div className=" w-full bg-black bg-opacity-10 h-auto  flex md:flex-row flex-col md:justify-around  text-slate-400 font-sans font-extralight tracking-wide leading-relaxed md:text-base text-[0.9rem]">
-        <div className="Intro md:sticky md:top-0 mt-6  md:w-[35%] w-[100%]  md:h-screen flex flex-col justify-center md:gap-20  md:p-10 p-2">
-          <div className="flex flex-col p-4 justify-center  md:items-start gap-2 font-extralight">
-            <a className=" md:text-[3.5rem] text-[2rem] font-bold text-white leading-none tracking-tight ">
+       <div className=" w-full bg-black bg-opacity-10 h-auto  flex lg:flex-row flex-col lg:justify-around  text-slate-400 font-sans font-extralight tracking-wide leading-relaxed lg:text-base text-[0.9rem]">
+        <div className="Intro lg:sticky lg:top-0 mt-6  lg:w-[45%] w-[100%]  lg:h-screen flex flex-col justify-center lg:gap-20  lg:p-10 p-2">
+          <div className="flex flex-col p-4 justify-center  lg:items-start gap-4 font-extralight">
+            <a className=" lg:text-[3.2rem] text-[2rem] font-bold text-white leading-none tracking-tight ">
               Kabina Thapa
             </a>
-            <h1 className="md:text-[1.5rem] text-[1rem] text-gray-100 ">
+            <h1 className="lg:text-[1.5rem] text-[1rem] text-gray-100 ">
               Aspiring Front-End Developer
             </h1>
-            <p className="md:text-lg text-[0.9rem]">
+            <p className="lg:text-lg text-[0.9rem]">
               Crafting pixel-perfect wonders and turning ideas into interactive
               reality.
               <p className="mt-1">Let's build something extraordinary together!</p>
             </p>
           </div>
-          <div className="flex flex-col text-2xl gap-4 ">
-          <div  className='md:flex hidden  items-center'>
+          <div className="flex flex-col text-2xl gap-4 p-4">
+          <div  className='lg:flex hidden  items-center'>
           <a
               href="#about"
               className={`${active==='about' && 'font-normal hover:no-underline text-white '}  hover:underline hover:underline-offset-8` }
@@ -70,7 +70,7 @@ function App() {
             </a>
             <div className={`${active==='about'?'opacity-100':'opacity-0'}  w-full bg-t h-[0.1rem]  ml-4 rounded` }></div>
           </div>
-          <div className=" md:flex hidden items-center"> 
+          <div className=" lg:flex hidden items-center"> 
           <a
               href="#projects"
               className={`${active==='projects' && ' text-white font-normal hover:no-underline'}  hover:underline hover:underline-offset-4` }
@@ -88,10 +88,10 @@ function App() {
           </div>
           <div className="flex flex-col gap-4 pl-4 pr-4">
           <div className="flex w-32 justify-between ">
-            <a href='https://www.linkedin.com/in/kabina-thapa'> <FaLinkedin className="hover:text-white text-2xl md:text-3xl" /></a>
-           <a href='https://github.com/KabinaThapa'> <FaGithub  className="hover:text-white text-2xl md:text-3xl" /></a>
+            <a href='https://www.linkedin.com/in/kabina-thapa'> <FaLinkedin className="hover:text-white text-2xl lg:text-3xl" /></a>
+           <a href='https://github.com/KabinaThapa'> <FaGithub  className="hover:text-white text-2xl lg:text-3xl" /></a>
            <a href="mailto:thapakabina28@gmail.com">
-              <FaEnvelope className="hover:text-white md:text-3xl text-2xl"/>
+              <FaEnvelope className="hover:text-white lg:text-3xl text-2xl"/>
             </a>
           </div>
          
@@ -100,17 +100,17 @@ function App() {
          
         
         </div>
-        <div className="second  md:w-[55%] w-[100%] flex flex-col md:gap-10 text-[0.9rem] md:text-base">
+        <div className="second  lg:w-[55%] w-[100%] flex flex-col lg:gap-10 text-[0.9rem] lg:text-base">
 
-        <section id="about"  className={`${stickyAbout?"block md:hidden sticky font-semibold top-0   mt-10 p-6  text-white backdrop-blur text-lg":'font-semibold block md:hidden   mt-10 p-6  text-white backdrop-blur text-lg'}`}>
+        <section id="about"  className={`${stickyAbout?"block lg:hidden sticky font-semibold top-0   mt-10 p-6  text-white backdrop-blur text-lg":'font-semibold block lg:hidden   mt-10 p-6  text-white backdrop-blur text-lg'}`}>
               About
             </section>
 
-          <section id="about" className=" flex flex-col md:p-10 p-6 gap-2  ">
+          <section id="about" className=" flex flex-col lg:p-10 p-6 gap-2  ">
          
          
             <div>
-              <h1 className="md:text-lg text-base text-white">
+              <h1 className="lg:text-lg text-base text-white">
                 About Me: Unveiling My Journey
               </h1>
               <p>
@@ -120,7 +120,7 @@ function App() {
             </div>
             <div>
               {" "}
-              <h1 className="md:text-lg text-base text-white">Venturing into the unknown</h1>
+              <h1 className="lg:text-lg text-base text-white">Venturing into the unknown</h1>
               <p>
                 In 2017, I embarked on a life-changing journey, leaving the
                 comfort of my home country to pursue my dreams in the United
@@ -131,7 +131,7 @@ function App() {
               </p>
             </div>
             <div>
-              <h1 className="md:text-lg text-base text-white"> Breaking Stereotypes</h1>
+              <h1 className="lg:text-lg text-base text-white"> Breaking Stereotypes</h1>
               <p>
                 Back in my homeland, the percentage of women pursuing technology
                 was minimal. Motivated by a desire to change this narrative, I
@@ -142,7 +142,7 @@ function App() {
               </p>
             </div>
             <div>
-              <h1 className="text-white md:text-lg text-base">Educational Milestones</h1>
+              <h1 className="text-white lg:text-lg text-base">Educational Milestones</h1>
               <p>
                 Fast forward to today, I hold a Bachelor's degree in Computer
                 Science from Queens College/CUNY, a testament to my dedication
@@ -154,7 +154,7 @@ function App() {
               </p>
             </div>
             <div>
-              <h1 className="text-white md:text-lg text-base">
+              <h1 className="text-white lg:text-lg text-base">
                 Beyond Code: Unleashing Creativity
               </h1>
               <p>
@@ -165,7 +165,7 @@ function App() {
               </p>
             </div>
             <div>
-              <h1 className="text-white md:text-lg text-base">Looking Ahead</h1>
+              <h1 className="text-white lg:text-lg text-base">Looking Ahead</h1>
               <p>
                 Now, as I stand at the threshold of my career, I am eager to
                 contribute my skills and enthusiasm to a dynamic team. I bring
@@ -175,23 +175,23 @@ function App() {
               </p>
             </div>
           </section>
-          <section id="projects" className={`${stickyProject?"block md:hidden sticky font-semibold top-0   mt-10 p-6  text-white backdrop-blur text-lg":' md:hidden blockfont-semibold   mt-10 p-6  text-white backdrop-blur text-lg'}`}>
+          <section id="projects" className={`${stickyProject?"block lg:hidden sticky font-semibold top-0   mt-10 p-6  text-white backdrop-blur text-lg":' lg:hidden block font-semibold   mt-10 p-6  text-white backdrop-blur text-lg'}`}>
               Projects
             </section>
         
-          <section id="projects" className="  flex flex-col md:gap-16 gap-20 md:p-4 p-6 text-[0.9rem] ">
+          <section id="projects" className="  flex flex-col lg:gap-16 gap-20 lg:p-4 p-6 text-[0.9rem] ">
         
 
-            <div className="flex md:flex-row flex-col-reverse md:gap-0 gap-6 items-start justify-evenly hover:bg-jet hover:bg-opacity-20  hover:rounded group md:p-6 ">
-              <div className="md:w-[30%] border p-1 border-slate-500 ">
+            <div className="flex lg:flex-row flex-col-reverse lg:gap-0 gap-6 items-start justify-evenly hover:bg-jet hover:bg-opacity-20  hover:rounded group lg:p-6 ">
+              <div className="lg:w-[30%] border p-1 border-slate-500 ">
                 <img src="/glamedge.png" className="w-full h-full object-fit"/>
               </div>
-              <div className="md:w-[55%] flex flex-col md:gap-4 gap-5">
-                <div className="flex md:flex-row flex-col md:gap-0 gap-2 justify-between md:items-center">
-                  <h1 className="md:text-lg text-white font-light group-hover:text-t group">GlamEdge Ecommerce Website</h1>
-                  <div className="flex md:justify-around justify-between md:w-16 w-12 group-hover:translate-y-[-0.4rem] group-hover:text-t ">
-                  <a href='https://github.com/KabinaThapa/GlamEdge' >  <FaGithub  className="hover:text-white md:text-xl text-lg" /></a> 
-                   <a href='https://glam-edge.vercel.app/'><LuArrowUpRightFromCircle className="hover:text-white md:text-xl text-lg" /></a> 
+              <div className="lg:w-[55%] flex flex-col lg:gap-4 gap-5">
+                <div className="flex lg:flex-row flex-col lg:gap-0 gap-2 justify-between lg:items-center">
+                  <h1 className="lg:text-lg text-white font-light group-hover:text-t group">GlamEdge Ecommerce Website</h1>
+                  <div className="flex lg:justify-around justify-between lg:w-16 w-12 group-hover:translate-y-[-0.4rem] group-hover:text-t ">
+                  <a href='https://github.com/KabinaThapa/GlamEdge' >  <FaGithub  className="hover:text-white lg:text-xl text-lg" /></a> 
+                   <a href='https://glam-edge.vercel.app/'><LuArrowUpRightFromCircle className="hover:text-white lg:text-xl text-lg" /></a> 
                   </div>
                 </div>
 
@@ -206,7 +206,7 @@ function App() {
                   checkout, GlamEdge delivers a modern and enjoyable shopping
                   journey.
                 </p>
-                <div className="font-normal  grid md:grid-cols-3 grid-cols-2 md:gap-4 gap-2">
+                <div className="font-normal  grid lg:grid-cols-3 grid-cols-2 lg:gap-4 gap-2">
                   <div className=" text-t bg-t bg-opacity-20 flex  justify-center rounded-3xl p-1">
                     Next.js
                   </div>
@@ -225,16 +225,16 @@ function App() {
                 </div>
               </div>
             </div>
-            <div className="flex md:flex-row flex-col-reverse md:gap-0 gap-6 items-start justify-evenly  hover:bg-jet hover:bg-opacity-20 md:p-6 hover:rounded group">
-              <div className="md:w-[30%] border p-1 border-slate-500">
+            <div className="flex lg:flex-row flex-col-reverse lg:gap-0 gap-6 items-start justify-evenly  hover:bg-jet hover:bg-opacity-20 lg:p-6 hover:rounded group">
+              <div className="lg:w-[30%] border p-1 border-slate-500">
               <img src="/weather.png" className="w-full h-full object-fit"/>
               </div>
-              <div className="md:w-[55%] flex flex-col md:gap-4 gap-5 ">
-                <div className="flex md:flex-row flex-col justify-between md:items-center md:gap-0 gap-2 ">
-                  <h1 className="text-white group-hover:text-t md:text-lg font-light">Weather Forecasts Website</h1>
-                  <div className="flex md:justify-around justify-between md:w-16 w-12 group-hover:translate-y-[-0.4rem] group-hover:text-t  ">
-                   <a href='https://github.com/KabinaThapa/weather-app'> <FaGithub className="hover:text-white md:text-xl text-lg" /></a> 
-                    <a href=' https://weather-app-kabinathapa.vercel.app/'><LuArrowUpRightFromCircle className="hover:text-white md:text-xl text-lg" /></a>
+              <div className="lg:w-[55%] flex flex-col lg:gap-4 gap-5 ">
+                <div className="flex lg:flex-row flex-col justify-between lg:items-center lg:gap-0 gap-2 ">
+                  <h1 className="text-white group-hover:text-t lg:text-lg font-light">Weather Forecasts Website</h1>
+                  <div className="flex lg:justify-around justify-between lg:w-16 w-12 group-hover:translate-y-[-0.4rem] group-hover:text-t  ">
+                   <a href='https://github.com/KabinaThapa/weather-app'> <FaGithub className="hover:text-white lg:text-xl text-lg" /></a> 
+                    <a href=' https://weather-app-kabinathapa.vercel.app/'><LuArrowUpRightFromCircle className="hover:text-white lg:text-xl text-lg" /></a>
                   </div>
                 </div>
                 <p>
@@ -244,7 +244,7 @@ function App() {
                   forecasts for the next 5 days. Stay informed and plan your
                   activities seamlessly with this intuitive weather application.
                 </p>
-                <div className="font-normal grid md:grid-cols-3 grid-cols-2 md:gap-4 gap-2">
+                <div className="font-normal grid lg:grid-cols-3 grid-cols-2 lg:gap-4 gap-2">
                   <div className=" text-t bg-t bg-opacity-20 flex  justify-center rounded-3xl p-1">
                     React
                   </div>
@@ -261,16 +261,16 @@ function App() {
                 </div>
               </div>
             </div>
-            <div className="flex md:flex-row flex-col-reverse md:gap-0 gap-6 items-start justify-evenly  hover:bg-jet hover:bg-opacity-10 md:p-6 hover:rounded group">
-              <div className="md:w-[30%] border p-1 border-slate-500">
+            <div className="flex lg:flex-row flex-col-reverse lg:gap-0 gap-6 items-start justify-evenly  hover:bg-jet hover:bg-opacity-10 lg:p-6 hover:rounded group">
+              <div className="lg:w-[30%] border p-1 border-slate-500">
                 <img src='/portfolio.png'/>
               </div>
-              <div className="md:w-[55%] flex flex-col md:gap-4 gap-5">
-                <div className="flex md:flex-row flex-col justify-between md:items-center  md:gap-0 gap-2">
-                  <h1 className="text-white group-hover:text-t md:text-lg font-light">An Old Portfolio</h1>
-                  <div className="flex md:justify-around justify-between md:w-16 w-12 group-hover:text-t group-hover:translate-y-[-0.4rem]">
-                    <a className="" href='https://github.com/KabinaThapa/portfolio'><FaGithub className="hover:text-white text-lg md:text-xl"  /></a>
-                    <a href='https://portfolio-thapakabina.vercel.app/'><LuArrowUpRightFromCircle className="hover:text-white text-lg md:text-xl" /></a>
+              <div className="lg:w-[55%] flex flex-col lg:gap-4 gap-5">
+                <div className="flex lg:flex-row flex-col justify-between lg:items-center  lg:gap-0 gap-2">
+                  <h1 className="text-white group-hover:text-t lg:text-lg font-light">An Old Portfolio</h1>
+                  <div className="flex lg:justify-around justify-between lg:w-16 w-12 group-hover:text-t group-hover:translate-y-[-0.4rem]">
+                    <a className="" href='https://github.com/KabinaThapa/portfolio'><FaGithub className="hover:text-white text-lg lg:text-xl"  /></a>
+                    <a href='https://portfolio-thapakabina.vercel.app/'><LuArrowUpRightFromCircle className="hover:text-white text-lg lg:text-xl" /></a>
                   </div>
                 </div>
                 <p>
@@ -283,7 +283,7 @@ function App() {
                   portfolio and stay tuned for more exciting chapters in my
                   evolving journey.
                 </p>
-                <div className="font-normal grid md:grid-cols-3 grid-cols-2 md:gap-4 gap-2">
+                <div className="font-normal grid lg:grid-cols-3 grid-cols-2 lg:gap-4 gap-2">
                   <div className=" text-t bg-t bg-opacity-20 flex  justify-center rounded-3xl p-1">
                     Three.js
                   </div>
@@ -303,11 +303,11 @@ function App() {
               </div>
            
             </div>
-            <div className=" md:ml-12  flex items-center w-60 md:justify-evenly  text-xl text-white font-semibold group hover:underline hover:underline-offset-8">
+            <div className=" lg:ml-12  flex items-center w-60 lg:justify-evenly  text-xl text-white font-semibold group hover:underline hover:underline-offset-8">
               <a href='/Kabina Thapa-Resume.pdf'>View Full Resume</a> 
             <LuArrowRight size={20} className="group-hover:translate-x-2"/>
               </div>
-              <footer className="flex items-center gap-1 justify-center md:p-10 text-[0.8rem]">
+              <footer className="flex items-center gap-1 justify-center lg:p-10 text-[0.8rem]">
               <FaRegCopyright/>
                 <p>
                     2024 Kabina Thapa. All rights Reserved.
