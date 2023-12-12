@@ -45,7 +45,7 @@ function App() {
     <>
       <div className="outbox w-full bg-mount ">
        <div className=" w-full bg-black bg-opacity-10 h-auto  flex lg:flex-row flex-col lg:justify-around  text-slate-400 font-sans font-extralight tracking-wide leading-relaxed lg:text-base text-[0.9rem]">
-        <div className="Intro border lg:sticky lg:top-0 md:mt-10 lg:mt-0  lg:w-[45%] w-[100%]  lg:h-screen flex flex-col justify-center lg:gap-20  lg:p-10 p-6 gap-3 ">
+        <div className="Intro  lg:sticky lg:top-0 md:mt-10 lg:mt-0  lg:w-[45%] w-[100%]  lg:h-screen flex flex-col justify-center lg:gap-20  lg:p-10 p-6 gap-3 ">
           <div className="flex flex-col  justify-center  lg:items-start lg:gap-4 gap-2 font-extralight">
             <a className=" lg:text-[3.2rem] text-[2rem] font-bold text-white leading-none tracking-tight ">
               Kabina Thapa
