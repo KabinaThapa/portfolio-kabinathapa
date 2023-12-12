@@ -7,8 +7,8 @@ import { useEffect } from "react";
 
 function App() {
   const[active,setActive]=useState('about')
-  const [stickyProject, setStickyProject]=useState('')
-  const [stickyAbout, setStickyAbout]=useState('')
+  const [stickyProject, setStickyProject]=useState(false)
+  const [stickyAbout, setStickyAbout]=useState(false)
   
   function handleScrollto(){
     const sections=document.querySelectorAll('section')
@@ -34,9 +34,11 @@ function App() {
   
   const handlescroll = (id) => {
     const section = document.getElementById(id);
-    if (id) {
-      section.scrollIntoView({ behavior: "smooth" });
+    if(id){
+      section.scrollIntoView({behaviour:'smooth'})
     }
+
+    
   };
 
   return (
@@ -102,7 +104,7 @@ function App() {
         </div>
         <div className="second  lg:w-[55%] w-[100%] flex flex-col lg:gap-10 text-[0.9rem] lg:text-base">
 
-        <section id="about"  className={`${stickyAbout?"block lg:hidden sticky font-semibold top-0   mt-14 pl-6 pt-2 pb-2  text-white backdrop-blur text-lg":'font-semibold block lg:hidden   mt-10 pl-6 pt-2 pb-2  text-white backdrop-blur text-lg'}`}>
+        <section  className={`${stickyAbout?"block lg:hidden sticky font-semibold top-0   mt-14 pl-6 pt-2 pb-2  text-white backdrop-blur text-lg":'font-semibold block lg:hidden   mt-10 pl-6 pt-2 pb-2  text-white backdrop-blur text-lg'}`}>
               About
             </section>
 
@@ -175,7 +177,7 @@ function App() {
               </p>
             </div>
           </section>
-          <section id="projects" className={`${stickyProject?"block lg:hidden sticky font-semibold top-0   mt-10 pl-6 pt-2 pb-2 text-white backdrop-blur text-lg":' lg:hidden block font-semibold   mt-10 pl-6 pt-2 pb-2  text-white backdrop-blur text-lg'}`}>
+          <section  className={`${stickyProject ? "block lg:hidden sticky font-semibold top-0   mt-10 pl-6 pt-2 pb-2 z-20 text-white backdrop-blur text-lg":' lg:hidden block font-semibold   mt-10 pl-6 pt-2 pb-2  text-white backdrop-blur text-lg'}`}>
               Projects
             </section>
         
