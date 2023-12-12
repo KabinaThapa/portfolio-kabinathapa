@@ -181,14 +181,14 @@ function App() {
               Projects
             </section>
         
-          <section id="projects" className="  flex flex-col lg:gap-16 gap-20 lg:p-4 p-6 ">
+          <section id="projects" className="  flex flex-col lg:gap-16 gap-20 lg:p-4  p-2 ">
         
 
-            <div className="flex lg:grid md:grid lg:grid-cols-3 md:grid-cols-3 flex-col-reverse lg:gap-8 gap-6 items-start justify-evenly hover:bg-jet hover:bg-opacity-20  hover:rounded group lg:p-6 md:p-6 md:gap-12 ">
+            <div className="flex  lg:grid md:grid lg:grid-cols-3 md:grid-cols-3 flex-col-reverse lg:gap-8 gap-6 items-start justify-evenly hover:bg-jet hover:bg-opacity-20  hover:rounded group lg:p-6 p-4 md:gap-12 ">
               <div className=" border p-1 border-slate-500 ">
                 <img src="/glamedge.png" className="w-full h-full object-fit"/>
               </div>
-              <div className=" lg:col-span-2 md:col-span-2 flex flex-col gap-4">
+              <div className=" lg:col-span-2 md:col-span-2 flex flex-col gap-4 md:p-2 lg:p-0">
                 <div className="flex  justify-between items-center">
                   <h1 className="lg:text-lg md:text-lg text-base text-white font-light group-hover:text-t group">GlamEdge Ecommerce Website</h1>
                   <div className="flex justify-evenly  lg:w-20 w-16 group-hover:translate-y-[-0.4rem] group-hover:text-t ">
@@ -227,7 +227,7 @@ function App() {
                 </div>
               </div>
             </div>
-            <div className=" md:grid lg:grid lg:grid-cols-3 md:grid-cols-3 flex flex-col-reverse lg:gap-8 md:gap-12 gap-6 items-start justify-evenly  hover:bg-jet hover:bg-opacity-20 lg:p-6 md:p-6 hover:rounded group">
+            <div className=" md:grid lg:grid lg:grid-cols-3 md:grid-cols-3 flex flex-col-reverse lg:gap-8 md:gap-12 gap-6 items-start justify-evenly  hover:bg-jet hover:bg-opacity-20 lg:p-6 p-4 hover:rounded group">
               <div className=" border p-1 border-slate-500">
               <img src="/weather.png" className="w-full h-full object-fit"/>
               </div>
@@ -263,7 +263,7 @@ function App() {
                 </div>
               </div>
             </div>
-            <div className="flex lg:grid lg:grid-cols-3 md:grid md:grid-cols-3 flex-col-reverse lg:gap-8 gap-6 items-start justify-evenly  hover:bg-jet hover:bg-opacity-10 lg:p-6 md:p-6 md:gap-12 hover:rounded group">
+            <div className="flex lg:grid lg:grid-cols-3 md:grid md:grid-cols-3 flex-col-reverse lg:gap-8 gap-6 items-start justify-evenly  hover:bg-jet hover:bg-opacity-10 lg:p-6 p-4 md:gap-12 hover:rounded group">
               <div className=" border p-1 border-slate-500">
                 <img src='/portfolio.png'/>
               </div>
@@ -305,7 +305,7 @@ function App() {
               </div>
            
             </div>
-            <div className=" lg:ml-12  flex items-center w-60 lg:justify-evenly  text-xl text-white font-semibold group hover:underline hover:underline-offset-8">
+            <div className=" lg:ml-12 ml-6  flex items-center w-60 lg:justify-evenly  text-xl text-white font-semibold group hover:underline hover:underline-offset-8">
               <a href='/Kabina Thapa-Resume.pdf'>View Full Resume</a> 
             <LuArrowRight size={20} className="group-hover:translate-x-2"/>
               </div>
