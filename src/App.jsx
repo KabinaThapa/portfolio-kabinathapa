@@ -458,7 +458,7 @@ function App() {
                 </div>
               </div>
               <div className=" lg:ml-12 ml-6  flex items-center w-60 lg:justify-evenly  text-xl text-white font-semibold group hover:underline hover:underline-offset-8">
-                <a href="/Kabina Thapa-Resume.pdf">View Full Resume</a>
+                <a href="KabinaThapa(Resume) (2).pdf">View Full Resume</a>
                 <LuArrowRight size={20} className="group-hover:translate-x-2" />
               </div>
               <footer className="flex items-center gap-1 justify-center lg:p-10 text-[0.8rem]">
